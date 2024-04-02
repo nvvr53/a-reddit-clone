@@ -50,7 +50,7 @@ pipeline {
                 sh "trivy fs . > trivyfs.txt"
              }
          }
-    }
+    
 	stage("Build & Push Docker Image") {
              steps {
                  script {
@@ -64,4 +64,5 @@ pipeline {
                  }
              }
          }
+      }
 }
