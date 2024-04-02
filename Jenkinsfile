@@ -80,6 +80,7 @@ pipeline {
                  }
              }
          }
+	// Triggering CD Pipeline
 	stage("Trigger CD Pipeline") {
             steps {
                 script {
